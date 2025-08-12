@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown 在线编辑器</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Markdown 在线编辑器</h1>
+            <div class="toolbar">
+                <button id="btn-bold" title="加粗">B</button>
+                <button id="btn-italic" title="斜体">I</button>
+                <button id="btn-heading" title="标题">#</button>
+                <button id="btn-link" title="链接">🔗</button>
+                <button id="btn-image" title="图片">🖼️</button>
+                <button id="btn-list" title="列表">•</button>
+                <button id="btn-code" title="代码">&lt;/&gt;</button>
+                <button id="btn-quote" title="引用">❝</button>
+                <button id="btn-hr" title="分隔线">—</button>
+                <button id="btn-table" title="表格">☰</button>
+                <button id="btn-clear" title="清空">🗑️</button>
+                <button id="btn-copy" title="复制HTML">📋</button>
+                <button id="btn-download-md" title="下载Markdown">⬇️.md</button>
+                <button id="btn-download-html" title="下载HTML">⬇️.html</button>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="editor-container">
+            <div class="editor-header">
+                <h2>Markdown 编辑</h2>
+            </div>
+            <textarea id="markdown-input" placeholder="在这里输入 Markdown 文本..."></textarea>
+        </div>
+        
+        <div class="preview-container">
+            <div class="preview-header">
+                <h2>预览</h2>
+            </div>
+            <div id="preview-output"></div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>Markdown 在线编辑器 - 简单易用的 Markdown 编辑工具</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "markdown-online-editor",
+  "version": "1.0.0",
+  "description": "一个简单易用的 Markdown 在线编辑器",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "keywords": [
+    "markdown",
+    "editor",
+    "online"
+  ],
+  "author": "",
+  "license": "MIT"
+}
